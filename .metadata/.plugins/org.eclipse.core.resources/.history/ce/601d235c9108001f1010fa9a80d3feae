@@ -1,0 +1,28 @@
+package myReflect;
+
+import java.lang.reflect.Constructor;
+
+public class MyReflectDemo2 {
+	// 获取构造方法
+	public static void main(String[] args) throws ClassNotFoundException {
+		
+		Class clazz = Class.forName("myReflect.Student");
+		
+		// 获取public的所有构造方法
+		Constructor[] constructors = clazz.getConstructors();
+		for (Constructor constructor : constructors) {
+			System.out.println(constructor);
+		}
+		System.out.println("--------------------------------");
+		
+		// 获取所有的构造方法
+		Constructor[] declaredConstructors = clazz.getDeclaredConstructors();
+		for (Constructor constructor : declaredConstructors) {
+			System.out.println(constructor);
+		}
+		
+		Constructor declaredConstructor1 = clazz.getDeclaredConstructor();
+
+	}
+
+}

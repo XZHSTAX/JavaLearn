@@ -1,0 +1,14 @@
+package bufferStream;
+
+import java.io.BufferedInputStream;
+import java.io.FileInputStream;
+
+public class BufferStreamDemo1 {
+
+	public static void main(String[] args) {
+		BufferedInputStream bis = new BufferedInputStream(new FileInputStream("a.txt"));
+		
+
+	}
+
+}

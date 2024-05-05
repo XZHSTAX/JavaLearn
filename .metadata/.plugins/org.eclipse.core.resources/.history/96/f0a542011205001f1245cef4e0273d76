@@ -1,0 +1,18 @@
+package myStream;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.function.Consumer;
+import java.util.stream.Stream;
+
+public class MyStreamDemo2 {
+	// 演示collect的使用
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<String>();
+		Collections.addAll(list, "xzh-M-24","ljy-W-24","xzh2-M-24","xzh3-M-24");
+		
+		list.stream().filter(s->"M".equals(s.split("-")[1])).forEach(s->System.out.println(s));
+
+	}
+
+}

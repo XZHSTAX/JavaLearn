@@ -1,0 +1,16 @@
+package myAnnotation;
+
+public class MyAnnotationDemo1 {
+	// 测试元注解
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+@interface MyAnnotation {
+    // 定义注解的属性
+    String value() default "default value";
+    int count() default 0;
+}

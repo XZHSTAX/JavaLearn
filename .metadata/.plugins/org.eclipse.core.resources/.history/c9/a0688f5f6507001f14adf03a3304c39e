@@ -1,0 +1,10 @@
+package myCharStream;
+
+public class MyCharStream {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

@@ -1,0 +1,5 @@
+package exerciseMyFile;
+
+public class Exercise1 {
+	File f = new File(".src/exerciseMyFile");
+}

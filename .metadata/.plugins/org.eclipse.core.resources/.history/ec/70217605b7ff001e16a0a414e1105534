@@ -1,0 +1,13 @@
+package mySet;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class IterateWithLambda {
+
+	public static void main(String[] args) {
+		Collection<String> coll = new ArrayList<>();
+
+	}
+
+}

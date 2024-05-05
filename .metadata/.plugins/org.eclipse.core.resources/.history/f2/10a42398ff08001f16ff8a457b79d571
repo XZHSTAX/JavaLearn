@@ -1,0 +1,7 @@
+package myDynamicProxy;
+
+public class BigStar {
+	private String name;
+	
+	
+}

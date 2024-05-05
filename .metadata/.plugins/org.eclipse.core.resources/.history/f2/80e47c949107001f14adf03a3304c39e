@@ -1,0 +1,19 @@
+package bufferStream;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class BufferStreamDemo1 {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		BufferedInputStream bis = new BufferedInputStream(new FileInputStream("a.txt"));
+		BufferedOutputStream bos = new BufferedOutputStream(new FileOutputStream("a.txt"));
+		
+		
+
+	}
+
+}

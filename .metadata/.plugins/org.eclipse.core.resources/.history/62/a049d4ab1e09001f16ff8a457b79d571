@@ -1,0 +1,20 @@
+package myAnnotation;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Target;
+
+public class MyAnnotationDemo1 {
+	// 测试元注解
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+@Target(value = ElementType.METHOD)
+@interface MyAnnotation {
+    // 定义注解的属性
+    String value() default "default value";
+    int count() default 0;
+}

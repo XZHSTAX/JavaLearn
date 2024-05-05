@@ -1,0 +1,39 @@
+package myReflect;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.lang.reflect.Field;
+
+public class Exercise1 {
+	// 对于任意一个对象，都可以把对象所有的字段名和值保存到文件中
+	public static void main(String[] args) throws IllegalAccessException, IOException {
+		// TODO Auto-generated method stub
+		Student s = new Student("xzh",24);
+		Teacher t = new Teacher("ljy",5);
+		
+		saveObject(s);
+		
+	}
+	
+	public static void saveObject(Object obj) throws  IllegalAccessException, IOException {
+		Class clazz = obj.getClass();   // 获取该对象的字节码文件
+		
+		BufferedWriter bw = new BufferedWriter(new FileWriter("RecordObject.txt"));
+		
+		// 获取该对象的所有字段
+		Field[] fields = clazz.getDeclaredFields();		
+		for (Field field : fields) {
+			// 先解除访问限制
+			field.setAccessible(true);
+			// 获取字段的名称
+			String name = field.getName();
+			// 获取该字段的值
+			Object value = field.get(obj);
+			System.out.println(name + " = " + value);
+			bw.write(name + " = " + value);
+			bw.newLine();
+		}
+		bw.close();
+	}
+}

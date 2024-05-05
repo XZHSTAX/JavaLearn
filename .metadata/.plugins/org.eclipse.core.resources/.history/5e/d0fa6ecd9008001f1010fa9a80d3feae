@@ -1,0 +1,15 @@
+package myReflect;
+
+public class MyReflectDemo2 {
+	// 获取构造方法
+	public static void main(String[] args) throws ClassNotFoundException {
+		
+		Class clazz = Class.forName("myReflect.Student");
+		
+		
+		
+		
+
+	}
+
+}

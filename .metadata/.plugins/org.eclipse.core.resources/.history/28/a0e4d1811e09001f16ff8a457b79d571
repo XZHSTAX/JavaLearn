@@ -1,0 +1,10 @@
+package myAnnotation;
+
+public class MyAnnotationDemo1 {
+	// 测试元注解
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

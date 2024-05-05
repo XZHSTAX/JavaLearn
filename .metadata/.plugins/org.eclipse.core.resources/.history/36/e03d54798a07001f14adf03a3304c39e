@@ -1,0 +1,50 @@
+package myIOExercise;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class MyIOExercise1 {
+	// 文件夹拷贝、考虑子文件夹
+	public static void main(String[] args) {
+		File root = new File("Test");
+		File rootCopy = new File("Test_Copy");
+		rootCopy.mkdir();
+		
+		
+
+	}
+	
+	public static void CopyFile(File f) {
+		File[] listFiles = f.listFiles();
+		for (File file : listFiles) {
+			if(file.isFile()) {
+				
+			}
+			else {
+				File copy = new File(file.getAbsolutePath());
+				copy.mkdir();
+				CopyFile(file);
+			}
+		}
+	}
+	
+	public static void myCp(File oriFile,File targetFile) throws IOException {
+		FileOutputStream fos = new FileOutputStream(targetFile);
+		FileInputStream fis = new FileInputStream(oriFile);
+		
+		int len;
+		byte[] bytes = new byte[1024*1024*5];
+		while((len = fis.read()) != -1) {
+			fos.write(bytes,0,len);
+		}
+		
+		fos.close();
+		fis.close();
+		
+		
+	}
+
+}

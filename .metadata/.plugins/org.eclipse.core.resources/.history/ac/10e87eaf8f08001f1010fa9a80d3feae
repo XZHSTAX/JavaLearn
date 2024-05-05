@@ -1,0 +1,12 @@
+package myReflect;
+
+public class MyReflectDemo1 {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		// 填写全类名，全类名即包名+类名
+		
+		Class.forName("myReflect.Student");
+
+	}
+
+}

@@ -1,0 +1,10 @@
+package myRegex;
+
+public class MyRegexDemo1 {
+	// 正则表达式匹配手机号码
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

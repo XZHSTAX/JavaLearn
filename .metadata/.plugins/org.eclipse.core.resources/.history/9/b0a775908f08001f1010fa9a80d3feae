@@ -1,0 +1,10 @@
+package myReflect;
+
+public class MyReflectDemo1 {
+
+	public static void main(String[] args) {
+		Class.forName();
+
+	}
+
+}

@@ -1,0 +1,34 @@
+package exerciseMyFile;
+
+import java.io.File;
+import java.io.FilenameFilter;
+import java.io.IOException;
+import java.util.HashMap;
+
+public class Exercise4 {
+	//  统计各种文件的个数，包括子文件夹
+	
+	HashMap<String, Integer> hm = new HashMap<String, Integer>();
+	
+	public static void main(String[] args) throws IOException{
+		// 首先创建path2delete这个目录
+		String path  = "aaa";
+		File f = new File(path);
+		
+		HashMap<String, Integer> hm = new HashMap<String, Integer>();
+		
+	}
+	
+	public static void countFile(File f) {
+		File[] listFiles = f.listFiles();
+		for (File file : listFiles) {
+			if(file.isFile()) {
+				
+			}else {
+				countFile(file);
+			}
+		}
+		
+		
+	}
+}

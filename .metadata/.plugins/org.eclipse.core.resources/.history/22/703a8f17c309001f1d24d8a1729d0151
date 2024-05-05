@@ -1,0 +1,26 @@
+package fakeJunit;
+
+public class FakeJunitDemo1 {
+
+	public static void main(String[] args) throws ClassNotFoundException {
+		Class clazz = Class.forName("fakeJunit.FakeJunitDemo1");
+		
+		
+
+	}
+	
+	@Mytest
+	public void test1() {
+		System.out.println("===test1===");
+	}
+	
+	public void test2() {
+		System.out.println("===test2===");
+	}
+	
+	@Mytest
+	public void test3() {
+		System.out.println("===test3===");
+	}
+
+}

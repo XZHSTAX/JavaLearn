@@ -1,0 +1,15 @@
+package myByteStream;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+
+public class ByteStreamDemo1 {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		FileOutputStream fos = new FileOutputStream("MyIO\\a.txt");
+		fos.write(97);
+		fos.close();
+	}
+
+}

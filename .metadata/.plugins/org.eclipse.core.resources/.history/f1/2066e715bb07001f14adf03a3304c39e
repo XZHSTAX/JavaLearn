@@ -1,0 +1,22 @@
+package myObjectStream;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
+public class MyObjectStreamDemo1 {
+
+	public static void main(String[] args) throws FileNotFoundException, IOException {
+		
+		Student s1 = new Student("xzh",24);
+		
+		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("StudentRecord.txt"));
+		
+		oos.writeObject(s1);
+		
+		oos.close();
+
+	}
+
+}

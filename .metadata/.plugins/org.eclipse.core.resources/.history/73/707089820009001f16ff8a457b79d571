@@ -1,0 +1,14 @@
+package myDynamicProxy;
+
+import java.lang.reflect.Proxy;
+
+public class ProxyUtil {
+ // 用来创建代理
+	public static Star createProxy(BigStar bigStar) {
+		Star star = Proxy.newProxyInstance(ProxyUtil.class.getClassLoader(), null, null)
+		
+		
+		return star;
+		
+	}
+}

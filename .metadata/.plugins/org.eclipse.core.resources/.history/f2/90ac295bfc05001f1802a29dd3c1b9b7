@@ -1,0 +1,24 @@
+package exerciseMyFile;
+
+import java.io.File;
+import java.io.FilenameFilter;
+import java.io.IOException;
+
+public class Exercise2 {
+	
+	public static void main(String[] args) throws IOException{
+		File file = new File("aaa");
+		
+		File[] filesEndAVI = file.listFiles(new FilenameFilter() {
+			
+			@Override
+			public boolean accept(File dir, String name) {
+				return name.endsWith(".avi");
+			}
+		});
+		
+		
+		System.out.println(filesEndAVI.length>0 ? "True" : "False");
+	}
+
+}

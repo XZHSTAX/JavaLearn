@@ -1,0 +1,13 @@
+package mySet;
+
+import java.text.CollationKey;
+import java.util.ArrayList;
+
+public class IterateWithLambda {
+
+	public static void main(String[] args) {
+		Collation<String> coll = new ArrayList<>();
+
+	}
+
+}

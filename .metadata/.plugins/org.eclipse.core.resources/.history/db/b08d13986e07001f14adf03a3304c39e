@@ -1,0 +1,28 @@
+package myIOExercise;
+
+import java.io.File;
+
+public class MyIOExercise1 {
+	// 文件夹拷贝、考虑子文件夹
+	public static void main(String[] args) {
+		File root = new File("Test");
+		File rootCopy = new File("Test_Copy");
+		rootCopy.mkdir();
+		
+		
+
+	}
+	
+	public static void CopyFile(File f,File rootCopy) {
+		File[] listFiles = f.listFiles();
+		for (File file : listFiles) {
+			if(file.isFile()) {
+				File fileCopy = new File(null)
+			}
+			else {
+				CopyFile(file);
+			}
+		}
+	}
+
+}

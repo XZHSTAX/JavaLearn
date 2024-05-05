@@ -1,0 +1,9 @@
+package exerciseMyFile;
+
+import java.io.File;
+
+public class Exercise1 {
+	File file = new File("Myfile\\aaa");
+	
+	fild.mkdirs();
+}

@@ -1,0 +1,10 @@
+package myObjectStream;
+
+import java.util.stream.Stream;
+
+public class Student {
+	private String name;
+	private int age;
+	
+	
+}

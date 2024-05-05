@@ -1,0 +1,12 @@
+package myByteStream;
+
+import java.io.FileOutputStream;
+
+public class ByteStreamDemo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		FileOutputStream fos = new FileOutputStream("MyIO\\a.txt");
+	}
+
+}

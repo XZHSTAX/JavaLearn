@@ -1,0 +1,12 @@
+package myCommonsio;
+
+public class CommonsIODemo1 {
+
+	public static void main(String[] args) {
+		File  src = new File("a.txt");
+		
+		
+
+	}
+
+}

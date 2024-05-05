@@ -1,0 +1,8 @@
+package myDynamicProxy;
+
+public class ProxyUtil {
+ // 用来创建代理
+	public static void createProxy() {
+		
+	}
+}

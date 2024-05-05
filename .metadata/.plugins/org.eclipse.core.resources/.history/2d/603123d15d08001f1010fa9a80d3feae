@@ -1,0 +1,12 @@
+package myHutool;
+
+import cn.hutool.core.io.FileUtil;
+
+public class MyHutoolDemo1 {
+
+	public static void main(String[] args) {
+		FileUtil.file();
+
+	}
+
+}

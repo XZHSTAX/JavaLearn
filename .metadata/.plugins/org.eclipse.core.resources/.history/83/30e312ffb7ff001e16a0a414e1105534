@@ -1,0 +1,32 @@
+package mySet;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.function.Consumer;
+
+public class IterateWithLambda {
+
+	public static void main(String[] args) {
+		Collection<String> coll = new ArrayList<>();
+		
+		coll.add("a");
+		coll.add("b");
+		coll.add("c");
+		coll.add("d");
+		
+		coll.forEach( new Consumer<String>() {
+			// t 即为集合中的每一个元素
+			@Override
+			public void accept(String t) {
+				// TODO Auto-generated method stub
+				System.out.println(t);
+			}
+		});
+		
+		coll.forEach(()->{
+			System.out.println(t);
+		});
+
+	}
+
+}

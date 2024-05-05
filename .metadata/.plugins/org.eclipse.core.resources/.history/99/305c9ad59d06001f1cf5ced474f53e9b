@@ -1,0 +1,11 @@
+package myByteStream;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class ByteStreamDemo2 {
+	// 复制文件
+	public static void main(String[] args) throws IOException {
+		FileOutputStream fos = new FileOutputStream("a.txt",true); // true表示续写
+}

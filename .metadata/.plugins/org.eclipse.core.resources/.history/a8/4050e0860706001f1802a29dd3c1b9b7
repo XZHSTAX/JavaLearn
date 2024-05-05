@@ -1,0 +1,17 @@
+package exerciseMyFile;
+
+import java.io.File;
+import java.io.FilenameFilter;
+import java.io.IOException;
+
+public class Exercise3 {
+	//  删除整个path2delect
+	public static void main(String[] args) throws IOException{
+		// 首先创建path2delect这个目录
+		File f = new File("path2delect\\path2delect2\\path2delect3\\test.txt");
+		f.mkdirs();
+		
+	}
+	
+	public static void delete()
+}

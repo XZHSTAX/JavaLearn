@@ -1,0 +1,16 @@
+package myObjectStream;
+
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class MyObjectStreamDemo1 {
+
+	public static void main(String[] args) {
+		
+		Student s1 = new Student("xzh",24);
+		
+		ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("StudentRecord.txt"));
+
+	}
+
+}

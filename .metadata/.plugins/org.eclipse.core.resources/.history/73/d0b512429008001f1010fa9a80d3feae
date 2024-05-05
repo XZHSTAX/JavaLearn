@@ -1,0 +1,22 @@
+package myReflect;
+
+public class MyReflectDemo1 {
+	// 获取class对象的三种方式
+	public static void main(String[] args) throws ClassNotFoundException {
+		
+		// 第一种方式
+		// 填写全类名，全类名即包名+类名
+		Class clazz = Class.forName("myReflect.Student");
+		
+		// 第二种方式
+		Class clazz2 = Student.class;
+		
+		// 第三种方式
+		Student s = new Student();
+		Class clazz3 = s.getClass();
+		
+		
+
+	}
+
+}

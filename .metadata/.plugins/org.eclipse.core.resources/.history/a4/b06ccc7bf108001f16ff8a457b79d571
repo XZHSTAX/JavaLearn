@@ -1,0 +1,25 @@
+package myReflect;
+
+import java.io.FileInputStream;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
+import java.util.jar.Attributes.Name;
+
+public class MyReflectDemo3 {
+	// 获取成员变量
+	public static void main(String[] args) throws ClassNotFoundException, NoSuchMethodException, SecurityException, InstantiationException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+		
+		Class clazz = Class.forName("myReflect.Student");
+		
+		Field[] fields = clazz.getFields();
+		
+		for (Field field : fields) {
+			System.out.println(field);
+		}
+		
+		
+
+	}
+
+}

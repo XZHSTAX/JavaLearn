@@ -1,0 +1,16 @@
+package exerciseMyFile;
+
+import java.io.File;
+
+public class Exercise1 {
+	
+	public static void main(String[] args){
+		File file = new File("Myfile\\aaa");
+		
+		file.mkdirs();		
+		
+		File src = new File(file,"a.txt");
+		src.createNewFile();
+	}
+
+}

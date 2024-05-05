@@ -1,0 +1,26 @@
+package myAnnotation;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+public class MyAnnotationDemo2 {
+	// 自定义注解
+	public static void main(String[] args) {
+		
+
+	}
+	
+	@MyAnnotationX(name = "xzh")
+	public void test() {
+		
+	}
+}
+
+@Target({ElementType.TYPE,ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
+@interface MyAnnotationX{
+	String name(); // 定义注解的参数
+}
+

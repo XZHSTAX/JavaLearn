@@ -1,0 +1,23 @@
+package myDynamicProxy;
+
+public class BigStar {
+	private String name;
+
+	public BigStar(String name) {
+		super();
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void sing(String name) {
+		System.out.println(this.name + " sing " + name);
+	}
+	
+}

@@ -1,0 +1,7 @@
+package exerciseMyFile;
+
+import java.io.File;
+
+public class Exercise1 {
+	File f = new File(".src\\exerciseMyFile\\aaa");
+}

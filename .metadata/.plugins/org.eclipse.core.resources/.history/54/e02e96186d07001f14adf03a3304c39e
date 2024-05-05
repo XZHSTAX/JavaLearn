@@ -1,0 +1,10 @@
+package myIOExercise;
+
+public class MyIOExercise1 {
+	// 文件夹拷贝、考虑子文件夹
+	public static void main(String[] args) {
+		
+
+	}
+
+}

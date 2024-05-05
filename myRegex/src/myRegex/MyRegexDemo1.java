@@ -1,0 +1,30 @@
+package myRegex;
+
+public class MyRegexDemo1 {
+	
+	public static void main(String[] args) {
+		
+		// 正则表达式匹配手机号码
+		// 1表示以1开头，[3-9]手机号码第二位只能是3-9的数组，\\d{9}表示只能是9个数字
+		String regex1 = "1[3-9]\\d{9}";
+		System.out.println("18155214529".matches(regex1));
+		System.out.println("----------------------------");
+		
+		// 正则表达式匹配座机号码
+		// 0 表示区号从0开始，\\d{2,3}表示只能由2-3个数字
+		// -?表示-可以出现0或1次
+		// [1-9]表示号码不能以0开头
+		// \\d{4-9}表示后面的号码长度为4-9
+		String regex2 = "0\\d{2,3}-?[1-9]\\d{4,9}";
+		System.out.println("0552-4099525".matches(regex2));
+		
+		
+		// 正则表达式匹配邮箱号码
+		// \\w+ 表示@前面的字符可以为任意字符，并且至少出现一次
+		// [\\w[^_]]表示@后.前的数据可以是非下划线的字符，
+		// 
+		String regex3 = "\\w+@[\\w[^_]]{2,6}(\\.[a-zA-Z]{2,3}){1,2}";
+		System.out.println("xzhmars@foxmail.com".matches(regex3));
+	}
+
+}

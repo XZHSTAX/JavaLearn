@@ -1,0 +1,53 @@
+package myStream;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
+public class MyStreamDemo2 {
+	// 演示collect的使用
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<String>();
+		Collections.addAll(list, "xzh-M-24","ljy-W-24","xzh2-M-24","xzh3-M-24");
+		
+		List<String> list2 = list.stream().filter(s->"M".equals(s.split("-")[1]))
+					.collect(Collectors.toList());
+		Set<String> list3 = list.stream().filter(s->"M".equals(s.split("-")[1]))
+		.collect(Collectors.toSet());
+		
+		Map<String,Integer> map = list.stream().filter(s->"M".equals(s.split("-")[1]))
+		.collect(Collectors.toMap(new Function<String, String>() {
+
+			@Override
+			public String apply(String s) {
+				// TODO Auto-generated method stub
+				return s.split("-")[0];
+			}
+		}, new Function<String, Integer>() {
+
+			@Override
+			public Integer apply(String s) {
+				// TODO Auto-generated method stub
+				return Integer.parseInt(s.split("-")[2]);
+			}
+		}));
+		
+		Map<String,Integer> map2 = list.stream().filter(s->"M".equals(s.split("-")[1]))
+		.collect((s->s.split("-")[0]
+		, new Function<String, Integer>() {
+
+			@Override
+			public Integer apply(String s) {
+				// TODO Auto-generated method stub
+				return Integer.parseInt(s.split("-")[2]);
+			}
+		}));
+	}
+}

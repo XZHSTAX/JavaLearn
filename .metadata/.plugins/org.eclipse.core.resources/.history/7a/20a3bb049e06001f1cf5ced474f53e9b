@@ -1,0 +1,15 @@
+package myByteStream;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+public class ByteStreamDemo3 {
+	// 演示字节输入流的使用
+	public static void main(String[] args) throws IOException {
+		FileInputStream fis = new FileInputStream("a.txt"); // true表示续写
+		FileOutputStream fos = new FileOutputStream("a_copy.txt");
+	
+	}
+
+}

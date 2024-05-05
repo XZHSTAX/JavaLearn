@@ -1,0 +1,28 @@
+package exerciseMyFile;
+
+import java.io.File;
+import java.io.FilenameFilter;
+import java.io.IOException;
+
+public class Exercise2 {
+	//  寻找所有以.txt结尾的文件
+	public static void main(String[] args) throws IOException{
+		File root = File.listRoots()[0]; // 获取C盘盘符
+		
+		
+	}
+	
+	public static void findTXT(File f) {
+		File[] listFiles = f.listFiles((dir,name)->name.endsWith(".txt"));
+		File[] allFiles = f.listFiles();
+		for (File file : allFiles) {
+			if(file.isFile()) {
+				file.getName();
+			}
+			else {
+				findTXT(file);
+			}
+		}
+	}
+
+}

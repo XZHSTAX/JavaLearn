@@ -1,0 +1,15 @@
+package fakeJunit;
+
+public class FakeJunitDemo1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	
+	@Mytest
+	public void test1() {
+		System.out.println("test1");
+	}
+
+}

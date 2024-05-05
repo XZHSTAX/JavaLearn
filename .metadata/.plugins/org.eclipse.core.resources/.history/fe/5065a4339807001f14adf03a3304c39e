@@ -1,0 +1,32 @@
+package bufferStream;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.TreeMap;
+import java.util.function.Function;
+
+public class BufferStreamDemo2 {
+	// 为sortwords排序
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new FileReader("SortWords.txt"));
+		ArrayList<String> list = new ArrayList<String>();
+		String s;
+		while( (s = br.readLine())!= null) {
+			list.add(s);
+		}
+		TreeMap<Character, String> tm= new TreeMap<>();
+		
+		for (String string : list) {
+			tm.put(string.charAt(0), string);
+		}
+	}
+
+}

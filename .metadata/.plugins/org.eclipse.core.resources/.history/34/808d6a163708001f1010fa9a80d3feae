@@ -1,0 +1,17 @@
+package myCommonsio;
+
+import java.io.File;
+
+import org.apache.commons.io.FileUtils;
+
+public class CommonsIODemo1 {
+
+	public static void main(String[] args) {
+		File  src = new File("a.txt");
+		File  dest = new File("a_copy_commonsIO.txt");
+		
+		
+
+	}
+
+}

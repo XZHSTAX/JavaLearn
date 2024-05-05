@@ -1,0 +1,29 @@
+package exerciseMyFile;
+
+import java.io.File;
+import java.io.FilenameFilter;
+import java.io.IOException;
+import java.util.HashMap;
+
+public class Exercise4 {
+	//  统计各种文件夹总大小
+		
+	public static void main(String[] args) throws IOException{
+		// 首先创建path2delete这个目录
+		String path  = "aaa";
+		File f = new File(path);
+	
+	}
+	
+	public static void countSpace(File f) {
+		File[] listFiles = f.listFiles();
+		for (File file : listFiles) {
+			if(file.isFile()) {
+				
+			}
+			else {
+				countSpace(file);
+			}
+		}
+	}
+}

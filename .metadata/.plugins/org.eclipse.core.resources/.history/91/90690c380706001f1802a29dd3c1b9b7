@@ -1,0 +1,16 @@
+package exerciseMyFile;
+
+import java.io.File;
+import java.io.FilenameFilter;
+import java.io.IOException;
+
+public class Exercise3 {
+	//  寻找所有以.txt结尾的文件，使用递归方法
+	public static void main(String[] args) throws IOException{
+		File f = new File("path2delect\\path2delect2\\path2delect3\\test.txt");
+		f.mkdirs();
+		
+		
+		
+	}
+}
